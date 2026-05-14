@@ -1,0 +1,54 @@
+digraph G {
+rankdir=LR;
+node [shape=record];
+label="Aviones Disponibles";
+labelloc="t";
+
+"N50007" [label="N50007"];
+"N50009" [label="N50009"];
+"N50011" [label="N50011"];
+"N50013" [label="N50013"];
+"N50015" [label="N50015"];
+"N50017" [label="N50017"];
+"N50019" [label="N50019"];
+"N50021" [label="N50021"];
+"N50023" [label="N50023"];
+"N50025" [label="N50025"];
+"N50029" [label="N50029"];
+"N50001" [label="N50001"];
+"N50003" [label="N50003"];
+"N50005" [label="N50005"];
+"N50027" [label="N50027"];
+
+"N50007" -> "N50009";
+"N50009" -> "N50011";
+"N50011" -> "N50013";
+"N50013" -> "N50015";
+"N50015" -> "N50017";
+"N50017" -> "N50019";
+"N50019" -> "N50021";
+"N50021" -> "N50023";
+"N50023" -> "N50025";
+"N50025" -> "N50029";
+"N50029" -> "N50001";
+"N50001" -> "N50003";
+"N50003" -> "N50005";
+"N50005" -> "N50027";
+"N50027" -> "N50007";
+
+"N50007" -> "N50027" [style=dashed, color=blue, constraint=false];
+"N50009" -> "N50007" [style=dashed, color=blue, constraint=false];
+"N50011" -> "N50009" [style=dashed, color=blue, constraint=false];
+"N50013" -> "N50011" [style=dashed, color=blue, constraint=false];
+"N50015" -> "N50013" [style=dashed, color=blue, constraint=false];
+"N50017" -> "N50015" [style=dashed, color=blue, constraint=false];
+"N50019" -> "N50017" [style=dashed, color=blue, constraint=false];
+"N50021" -> "N50019" [style=dashed, color=blue, constraint=false];
+"N50023" -> "N50021" [style=dashed, color=blue, constraint=false];
+"N50025" -> "N50023" [style=dashed, color=blue, constraint=false];
+"N50029" -> "N50025" [style=dashed, color=blue, constraint=false];
+"N50001" -> "N50029" [style=dashed, color=blue, constraint=false];
+"N50003" -> "N50001" [style=dashed, color=blue, constraint=false];
+"N50005" -> "N50003" [style=dashed, color=blue, constraint=false];
+"N50027" -> "N50005" [style=dashed, color=blue, constraint=false];
+}
